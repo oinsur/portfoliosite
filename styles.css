@@ -1,0 +1,74 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+:root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 375px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #04080D;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #E9E6E6;
+    padding: 2% 0;
+}
+
+.page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #041e46d1;
+    padding: 1% 4%;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 70px;
+}
+
+nav {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #E9E6E6;
+}
+
+a {
+    color: #E9E6E6;
+    text-decoration: none;
+}
+
+button {
+    background: linear-gradient(45deg, #9747ff, #097b78);
+    padding: 2% 4%;
+    border-radius: 10px;
+    color: #E9E6E6;
+    font-size: 1rem;
+}
+
