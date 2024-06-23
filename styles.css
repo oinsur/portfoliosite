@@ -49,7 +49,7 @@ header {
 }
 
 .logo {
-    width: 70px;
+    width: 120px;
 }
 
 nav {
@@ -84,6 +84,7 @@ main {
 }
 
 .hero-left {
+    padding: 10% 0 5% 10%;
     width: 50%;
 }
 
@@ -96,11 +97,13 @@ h1 {
 }
 
 .hero-left p {
-    font-size: 2rem;
-}
+    letter-spacing: 0em;
+    width: 100%;
+    margin: 0 0 4%;
+    font-size: 1.8rem;}
 
 .hero-cta {
-    width: 35%;
+    width: 50%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -109,18 +112,38 @@ h1 {
 .hero-cta button {
     padding: 2% 4%;
     border-radius: 10px;
-    color: #E9E6E6;
-    font-size: 1rem;
-    background-color: #9747FF;
+    font-size: 1.25rem;
 }
 
+.contact-btn {
+    color: #E9E6E6;
+    background-color: #9747FF;
+}
+.work-btn {
+    border: 2px solid #9747FF;
+    background-color: transparent;
+    color: #9747FF;
+}
+
+
 .hero-right {
+    position: relative;
     width: 50%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .gradient {
-
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(90deg, #9747ff, #097b78);
+    filter: blur(160px);
 }
 
+.hero-img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 35%;
+}
