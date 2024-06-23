@@ -32,6 +32,7 @@ body {
 .page {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -52,7 +53,7 @@ header {
 }
 
 nav {
-    width: 40%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,11 +65,62 @@ a {
     text-decoration: none;
 }
 
-button {
+nav button {
     background: linear-gradient(45deg, #9747ff, #097b78);
     padding: 2% 4%;
     border-radius: 10px;
     color: #E9E6E6;
     font-size: 1rem;
+}
+
+main {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-left h2 {
+    font-size: 4rem;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+.hero-left p {
+    font-size: 2rem;
+}
+
+.hero-cta {
+    width: 35%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero-cta button {
+    padding: 2% 4%;
+    border-radius: 10px;
+    color: #E9E6E6;
+    font-size: 1rem;
+    background-color: #9747FF;
+}
+
+.hero-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.gradient {
+
 }
 
