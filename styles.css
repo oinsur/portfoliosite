@@ -276,11 +276,35 @@ h2 {
 }
 
 .services__cards {
-    width: 90%;
-    height: 340px;
-    background: linear-gradient(180deg, #9747FF 0%, #00AFAA);
+    width: 82%;
+    /* height: 340px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgba(0, 175, 170, 0.50) 0%, rgba(151, 71, 255, 0.50) 100%);
+    backdrop-filter: blur(25px);
     border-radius: 20px;
     margin: 2% 0;
+    padding: 2% 0;
+}
+
+.services__card {
+    height: 220px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #e9e6e67d;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.70) -53.89%, rgba(151, 71, 255, 0.70) 167.22%);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+}
+
+.services__card img {
+    width: 25%;
+    margin: 10% 0;
 }
 
 /* Animations */
