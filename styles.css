@@ -255,8 +255,12 @@ h1 {
     background: transparent;
 }
 
-.services, .portfolio {
+.services, .portfolio, .contact {
     flex-direction: column;
+}
+
+.separator-bar:last-of-type {
+    margin-top: -8%;
 }
 
 .services {
@@ -283,6 +287,8 @@ h2 {
     align-items: center;
     justify-content: space-around;
     background: linear-gradient(180deg, rgba(0, 175, 170, 0.50) 0%, rgba(151, 71, 255, 0.50) 100%);
+    border: 2px solid #e9e6e67d;
+    box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(25px);
     border-radius: 20px;
     margin: 2% 0;
@@ -353,6 +359,7 @@ h2 {
 }
 
 .portfolio__card_text {
+    position: relative;
     width: 50%;
     border-right: 2px solid;
     display: flex;
@@ -364,6 +371,7 @@ h2 {
 .portfolio__card_heading {
     font-size: 1rem;
     color: rgba(233, 230, 230, 0.50);
+    z-index: 1;
 }
 
 .portfolio__card_desc {
@@ -374,14 +382,16 @@ h2 {
     margin: 2% 0;
     padding: 0 21% 10% 0;
     /* border: 2px solid; */
+    z-index: 1;
 }
 
 .portfolio__card_work {
-    width: 50%;
+    width: 40%;
     background: linear-gradient(0deg, #00AFAA 0.52%, #E9E6E6 108.12%);
     border: 2px solid #e9e6e67d;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -391,6 +401,7 @@ h2 {
     color: #E9E6E6;
     font-size: 2rem;
     padding: 33% 0;
+    z-index: 1;
 }
 
 .portfolio__card_work img {
@@ -400,6 +411,37 @@ h2 {
     top: auto;
     left: 0;
     padding: 4%;
+}
+
+.portfolio__card:nth-of-type(2) .portfolio__card_text {
+    align-items: flex-end;
+    border: none;
+    border-left: 2px solid;
+}
+
+.portfolio__card:nth-of-type(2) .portfolio__card_desc {
+    text-align: right;
+    padding: 0 0 0 21%;
+}
+
+.portfolio__card:nth-of-type(2) .portfolio__card_heading {
+    padding-top: 10%;
+}
+
+.portfolio__card_text .gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.portfolio__card_cta {
+    align-self: flex-start;
+    padding: 2% 4%;
+    border: 2px solid #9747FF;
+    color: #9747FF;
+    margin: 2%;
+    border-radius: 20px;
 }
 
 /* Animations */
