@@ -444,6 +444,80 @@ h2 {
     border-radius: 20px;
 }
 
+.contact__content {
+    width: 82%;
+    margin: 2% 0;
+    background: linear-gradient(180deg, rgba(0, 175, 170, 0.50) 0%, rgba(151, 71, 255, 0.50) 100%);
+    backdrop-filter: blur(25px);
+    border: 2px solid #e9e6e67d;
+    border-radius: 10px;
+    padding: 4%;
+}
+
+.contact__content_subheading {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.contact__content_heading {
+    font-size: 2rem;
+    margin: 2% 0;
+}
+
+form {
+    width: 50%;
+    padding: 4% 2%;
+    border: 2px solid #e9e6e67d;
+    background: linear-gradient(180deg, #A8A8A8 0%, #00AFAA 100%);
+    border-radius: 20px;
+    align-self: flex-end;
+    margin: -7% 12% 4%;
+    z-index: 1;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-row__input-group {
+    width: 45%;
+    position: relative;
+}
+
+.form-row__input-group input {
+    /* position: relative; */
+    width: 100%;
+    padding: 4%;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #e9e6e67d;
+}
+
+.form-row__input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #04080D;
+    margin: 4%;
+    opacity: 50%;
+}
+
+
+footer {
+    width: 90%;
+    border-top: 2px solid #00AFAA;
+    padding: 4% 0 2%;
+}
+
+footer p {
+    letter-spacing: 0.1em;
+    text-align: center; 
+}
+
+
 /* Animations */
 @keyframes scroll {
     0% {

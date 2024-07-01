@@ -17,7 +17,7 @@
                 <a href="#">About Me</a>
                 <a href="#">Services</a>
                 <a href="#">Portfolio</a>
-                <button>Contact Me</button>      
+                <!-- <button>Contact Me</button>       -->
             </nav>
         </header>
         <main>
@@ -71,7 +71,7 @@
                         <img src="images/web-dev_icon.webp" alt="prototyping icon">
                         <div class="service__card_desc">
                             <p>
-                                In this phase, I will bring your ideas to life by creating detailed design layouts and interactive elements using Figma. This before development begins.
+                                In this phase, I will bring your ideas to life by creating detailed design layouts and interactive elements using Figma. This would be before development begins.
                             </p>
                         </div>
                     </div>
@@ -133,9 +133,31 @@
             </div>
             <section class="contact">
                 <h2>Contact Me</h2>
+                <div class="contact__content">
+                    <h3 class="contact__content_subheading">Project ideas, comments, suggestions...</h3>
+                    <h3 class="contact__content_heading">Fill out the form below</h3>
+                </div>
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-row__input-group">
+                          <input type="text" id="firstName" name="firstName" required>
+                          <label for="firstName">First Name</label>
+                        </div>
+                        <div class="form-row__input-group">
+                          <input type="text" id="lastName" name="lastName" required>
+                          <label for="lastName">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-row__input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                </form>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>&copy;2024 Design by: Omar Insurriaga All Rights Reserved</p>
+        </footer>
     </div>
 </body>
 </html>
