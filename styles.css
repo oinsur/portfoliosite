@@ -470,6 +470,7 @@ form {
     border: 2px solid #e9e6e67d;
     background: linear-gradient(180deg, #A8A8A8 0%, #00AFAA 100%);
     border-radius: 20px;
+    box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.25);
     align-self: flex-end;
     margin: -7% 12% 4%;
     z-index: 1;
@@ -485,12 +486,13 @@ form {
 .form-row__input-group {
     width: 45%;
     position: relative;
+    margin: 4% 0;
 }
 
 .form-row__input-group input {
     /* position: relative; */
     width: 100%;
-    padding: 4%;
+    padding: 14px;
     border-radius: 10px;
     border: none;
     border: 2px solid #e9e6e67d;
@@ -501,10 +503,28 @@ form {
     top: 0;
     left: 0;
     color: #04080D;
-    margin: 4%;
+    margin: 12px;
     opacity: 50%;
 }
 
+.form-row:nth-of-type(2) .form-row__input-group, .form-row:nth-of-type(3) .form-row__input-group {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #097B78;
+    width: 100%;
+    padding: 4%;
+    border-radius: 10px;
+    border: 2px solid #e9e6e67d;
+    color: #E9E6E6;
+    font-size: 1.25rem;
+}
 
 footer {
     width: 90%;
