@@ -1,172 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omar Insurriaga | Portfolio</title>
-    <link rel="icon" type="image/svg" href="images/portfolio-icon.svg">
-
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="icon" type="image/svg" href="images/portfolio-icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="page">
-        <header>
-            <img class="logo" src="images/portfolio-logo.webp" alt="OI Logo">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About Me</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <!-- <button>Contact Me</button>       -->
-            </nav>
-        </header>
-        <main>
-            <section class="hero">
-                <div class="hero__left">
-                    <h2>Hello,</h2>
-                    <h1>I'm Omar</h1>
-                    <p class="statement">I Craft Stunning and Functional Websites</p>
-                    <div class="hero__cta">
-                        <button class="contact-btn">Contact Me</button>
-                        <button class="work-btn">View Work</button>
-                    </div>
-                </div>
-                <div class="hero__right">
-                    <div class="gradient"></div>
-                </div>
-                <img class="hero__img" src="images/Omar-portfolio_portrait.webp" alt="">
-            </section>
-            <div class="separator-bar">
-                <img src="images/mouse.webp" alt="mouse icon" class="mouse-icon">
+      <header>
+        <img class="logo" src="images/portfolio-logo.webp" alt="OI Logo" />
+        <nav>
+          <a href="#">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="hero__left">
+            <h2>Hello,</h2>
+            <h1>I'm Omar</h1>
+            <p class="statement">I Craft Stunning and Functional Websites</p>
+            <div class="hero__cta">
+              <a href="#contact" class="contact-btn">Contact Me</a>
+              <a href="#portfolio" class="work-btn">View Work</a>
             </div>
-            <section class="about-me">
-                <div class="about-me__heading">Web Designer</div>
-                <div class="about-me__content">
-                    <div class="about-me__content_text">
-                        <p><span>About Me</span>I am a web designer and developer based in El Paso, TX, who creates beautiful and functional websites that meet your specific needs. From the initial idea to the final product, I carefully design and develop every part of your site to engage your audience and achieve results. Your business is unique, and your website should show that. I provide custom web design and development that matches your brand and goals. Whether you need a basic information site or something more robust, I will create a solution that goes beyond your expectations. Today, it's important to have a website that works well on all devices. I build sites that look great and work perfectly on phones, tablets, and desktops, giving your visitors the best experience. My designs are not only aesthetically pleasing but also easy to use and navigate.</p>
-                    </div>
-                    <div class="about-me__content_cta">
-                        <button class="contact-btn">Contact Me</button>
-                        <button class="cv-btn">Download CV</button>                        
-                    </div>
-                </div>
-            </section>
-            <div class="separator-bar">
-                <img src="images/mouse.webp" alt="mouse icon" class="mouse-icon">
+          </div>
+          <div class="hero__right">
+            <div class="gradient"></div>
+          </div>
+          <img
+            class="hero__img"
+            src="images/Omar-portfolio_portrait.webp"
+            alt=""
+          />
+        </section>
+        <div class="separator-bar" id="about">
+          <img src="images/mouse.webp" alt="mouse icon" class="mouse-icon" />
+        </div>
+        <section class="about-me">
+          <div class="about-me__heading">Web Designer</div>
+          <div class="about-me__content">
+            <div class="about-me__content_text">
+              <p>
+                <span>About Me</span>I am a web designer and developer based in
+                El Paso, TX, who creates beautiful and functional websites that
+                meet your specific needs. From the initial idea to the final
+                product, I carefully design and develop every part of your site
+                to engage your audience and achieve results. Your business is
+                unique, and your website should show that. I provide custom web
+                design and development that matches your brand and goals.
+                Whether you need a basic information site or something more
+                robust, I will create a solution that goes beyond your
+                expectations. Today, it's important to have a website that works
+                well on all devices. I build sites that look great and work
+                perfectly on phones, tablets, and desktops, giving your visitors
+                the best experience. My designs are not only aesthetically
+                pleasing but also easy to use and navigate.
+              </p>
             </div>
-            <section class="services">
-                <h2>Web Design Services</h2>
-                <div class="services__cards">
-                    <div class="services__card">
-                        <h3>Initial Design</h3>
-                        <img src="images/UI_icon.webp" alt="ui icon">
-                        <div class="service__card_desc">
-                            <p>
-                                This phase includes comprehensive research to understand your brand & audience, creating wire-frames to map out the structure, and prototype sketches to visualize the design.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="services__card">
-                        <h3>Prototyping</h3>
-                        <img src="images/web-dev_icon.webp" alt="prototyping icon">
-                        <div class="service__card_desc">
-                            <p>
-                                In this phase, I will bring your ideas to life by creating detailed design layouts and interactive elements using Figma. This would be before development begins.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="services__card">
-                        <h3>Development</h3>
-                        <img src="images/code_icon.webp" alt="coding icon">
-                        <div class="service__card_desc">
-                            <p>
-                                In this phase, I turn the design into a fully functional website by writing the HTML, CSS, and JavaScript needed to build the site. I will make sure that every element is implemented correctly.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="services__card">
-                        <h3>Testing</h3>
-                        <img src="images/testing_icon.webp" alt="testing icon">
-                        <div class="service__card_desc">
-                            <p>
-                                In this phase, I ensure your website performs seamlessly across all devices. This involves rigorous testing to identify and fix any issues, guaranteeing a smooth and responsive user experience. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="separator-bar">
-                <!-- <img src="images/mouse.webp" alt="mouse icon" class="mouse-icon"> -->
+            <div class="about-me__content_cta">
+              <a href="#contact" class="contact-btn">Contact Me</a>
+              <a
+                href="./Web-Designer__Resume_2025.pdf"
+                download="Omar-Insurriaga__resume"
+                class="work-btn"
+                >Download CV</a
+              >
             </div>
-            <section class="portfolio">
-                <h2>Portfolio</h2>
-                <h3 class="portfolio__heading">Here are some examples of my work</h3>
-                <div class="portfolio__cards">
-                    <div class="portfolio__card">
-                        <div class="portfolio__card_text">
-                            <div class="gradient"></div>
-                            <h3 class="portfolio__card_heading">Landing Page Redesign</h3>
-                            <p class="portfolio__card_desc">Redesigned TRD Advertising's landing page with custom HTML and CSS. Created a mobile-responsive design for optimal user experience on all devices. Enhanced accessibility, engagement, and brand presentation.</p>
-                        </div>
-                        <div class="portfolio__card_work">
-                            <h3 class="portfolio__card_title">TRD Advertising</h3>
-                            <div class="portfolio__card_cta">View Work</div>
-                            <img src="images/TRD-card.webp" alt="TRD Advertising">
-                        </div>
-                    </div>
-                    <div class="portfolio__card">
-                        <div class="portfolio__card_text">
-                            <div class="gradient"></div>
-                            <h3 class="portfolio__card_heading">Mobile responsive layout</h3>
-                            <p class="portfolio__card_desc">Learning exercise featuring a mobile-responsive layout and grid system. Chronicled a journey from Portland, Maine, to Portland, Oregon. Focused on creating an engaging and adaptive design for optimal viewing on all devices.</p>
-                        </div>
-                        <div class="portfolio__card_work">
-                            <h3 class="portfolio__card_title">From Portland to Portland</h3>
-                            <div class="portfolio__card_cta">View Work</div>
-                            <img src="images/travel-card.webp" alt="From Portland to Portland">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="separator-bar">
-                <!-- <img src="images/mouse.webp" alt="mouse icon" class="mouse-icon"> -->
+          </div>
+        </section>
+        <div class="separator-bar" id="services">
+          <img src="images/mouse.webp" alt="mouse icon" class="mouse-icon" />
+        </div>
+        <section class="services">
+          <h2>Web Design Services</h2>
+          <div class="services__cards">
+            <div class="services__card">
+              <h3>Initial Design</h3>
+              <img src="images/UI_icon.webp" alt="ui icon" />
+              <div class="service__card_desc">
+                <p>
+                  I start by researching your brand and audience to set a clear
+                  direction. Then I create wireframes and sketch layouts to plan
+                  the structure and user experience.
+                </p>
+              </div>
             </div>
-            <section class="contact">
-                <h2>Contact Me</h2>
-                <div class="contact__content">
-                    <h3 class="contact__content_subheading">Project ideas, comments, suggestions...</h3>
-                    <h3 class="contact__content_heading">Fill out the form below</h3>
-                </div>
-                <form action="#" method="post">
-                    <div class="form-row">
-                        <div class="form-row__input-group">
-                          <input type="text" id="firstName" name="firstName" required>
-                          <label for="firstName">First Name</label>
-                        </div>
-                        <div class="form-row__input-group">
-                          <input type="text" id="lastName" name="lastName" required>
-                          <label for="lastName">Last Name</label>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-row__input-group">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">Email Address</label>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-row__input-group">
-                            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
-                    </div>
-                    <button>Send</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>&copy;2024 Design by: Omar Insurriaga All Rights Reserved</p>
-        </footer>
+            <div class="services__card">
+              <h3>Prototyping</h3>
+              <img src="images/web-dev_icon.webp" alt="prototyping icon" />
+              <div class="service__card_desc">
+                <p>
+                  This step focuses on turning ideas into detailed visuals. I
+                  use Figma to design interactive layouts that give a realistic
+                  preview before development begins.
+                </p>
+              </div>
+            </div>
+            <div class="services__card">
+              <h3>Development</h3>
+              <img src="images/code_icon.webp" alt="coding icon" />
+              <div class="service__card_desc">
+                <p>
+                  I take the finalized design and build a fully responsive
+                  website using clean HTML, CSS, and JavaScript. Every element
+                  is carefully coded for performance and clarity.
+                </p>
+              </div>
+            </div>
+            <div class="services__card">
+              <h3>Testing</h3>
+              <img src="images/testing_icon.webp" alt="testing icon" />
+              <div class="service__card_desc">
+                <p>
+                  To ensure everything runs smoothly, I test the site on
+                  different devices and browsers, fixing bugs and making sure
+                  the experience is fast and reliable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="separator-bar" id="portfolio"></div>
+        <section class="portfolio">
+          <h2>Portfolio</h2>
+          <h3 class="portfolio__heading">Here are some examples of my work</h3>
+          <div class="portfolio__cards">
+            <div class="portfolio__card">
+              <div class="portfolio__card_text">
+                <div class="gradient"></div>
+                <h3 class="portfolio__card_heading">Website Redesign</h3>
+                <p class="portfolio__card_desc">
+                  This project was a website redesign for Markowski Ruvalcava
+                  Law Firm, LLC. It features a modern layout, improved
+                  usability, and a Spanish translation toggle to better serve
+                  Spanish-speaking clients. The design focuses on clarity,
+                  accessibility, and a smooth user experience.
+                </p>
+              </div>
+              <div class="portfolio__card_work">
+                <h3 class="portfolio__card_title">
+                  Markowski Ruvalcava Law Firm, LLC
+                </h3>
+                <a
+                  href="https://lawfirmmr.com/"
+                  target="_blank"
+                  class="portfolio__card_cta"
+                  >View Work</a
+                >
+                <img
+                  src="images/law-card.webp"
+                  alt="From Portland to Portland"
+                />
+              </div>
+            </div>
+            <div class="portfolio__card">
+              <div class="portfolio__card_text">
+                <div class="gradient"></div>
+                <h3 class="portfolio__card_heading">Landing Page Redesign</h3>
+                <p class="portfolio__card_desc">
+                  Redesigned TRD Advertising's landing page with custom HTML and
+                  CSS. Created a mobile-responsive design for optimal user
+                  experience on all devices. Enhanced accessibility, engagement,
+                  and brand presentation.
+                </p>
+              </div>
+              <div class="portfolio__card_work">
+                <h3 class="portfolio__card_title">TRD Advertising</h3>
+                <a
+                  href="https://trdavertising.netlify.app/"
+                  target="_blank"
+                  class="portfolio__card_cta"
+                  >View Work</a
+                >
+                <img src="images/TRD-card.webp" alt="TRD Advertising" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="separator-bar" id="contact"></div>
+        <section class="contact">
+          <h2>Contact Me</h2>
+          <div class="contact__content">
+            <h3 class="contact__content_subheading">
+              Project ideas, comments, suggestions...
+            </h3>
+            <h3 class="contact__content_heading">Fill out the form below</h3>
+          </div>
+          <form action="#" method="post">
+            <div class="form-row">
+              <div class="form-row__input-group">
+                <input type="text" id="firstName" name="firstName" required />
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="form-row__input-group">
+                <input type="text" id="lastName" name="lastName" required />
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-row__input-group">
+                <input type="email" id="email" name="email" required />
+                <label for="email">Email Address</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-row__input-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+                <label for="message">Your Message</label>
+              </div>
+            </div>
+            <button>Send</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>&copy;2025 Design by: Omar Insurriaga All Rights Reserved</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
