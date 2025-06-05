@@ -53,11 +53,12 @@ header {
 }
 
 .logo {
-  width: 120px;
+  /* width: 120px; */
+  width: clamp(80px, 8vw, 120px);
 }
 
 nav {
-  width: 60%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,6 +71,7 @@ a {
   color: #e9e6e6;
   text-decoration: none;
   transition: 0.75s;
+  font-size: clamp(0.5rem, 2vw, 1rem);
 }
 
 a:hover {
@@ -140,7 +142,8 @@ h1 {
 .about-me__content_cta a {
   padding: 2% 4%;
   border-radius: 10px;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
+  font-size: clamp(0.5rem, 2vw, 1rem);
   transition: 0.75s;
 }
 
@@ -312,6 +315,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
   background: linear-gradient(
     180deg,
     rgba(0, 175, 170, 0.5) 0%,
@@ -322,12 +327,12 @@ h2 {
   backdrop-filter: blur(25px);
   border-radius: 20px;
   margin: 2% 0;
-  padding: 2% 0;
+  padding: 2%;
 }
 
 .services__card {
   height: 220px;
-  width: 20%;
+  max-width: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -616,5 +621,69 @@ footer p {
   }
   100% {
     transform: translateY(-300%);
+  }
+}
+
+/* media-queries */
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero__left {
+    width: 100%;
+  }
+  .hero__img {
+    width: 60%;
+  }
+  .separator-bar {
+    display: none;
+  }
+  .portfolio__card {
+    flex-direction: column;
+  }
+  .portfolio__card_text {
+    width: 100%;
+    border: none;
+  }
+  .portfolio__card_desc {
+    padding: 0 21% 0 0;
+  }
+  .portfolio__card_heading {
+    font-size: 2rem;
+  }
+  .portfolio__card_work {
+    width: 60%;
+    align-self: flex-end;
+  }
+  .portfolio__card:nth-of-type(2) {
+    flex-direction: column;
+    transform: none;
+  }
+  .portfolio__card:nth-of-type(2) .portfolio__card_work {
+    align-self: flex-start;
+  }
+  .portfolio__card:nth-of-type(2) .portfolio__card_text {
+    border: none;
+  }
+
+  /* .mouse-icon {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  main {
+    margin-top: 30%;
   }
 }
