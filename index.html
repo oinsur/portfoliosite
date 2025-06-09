@@ -191,7 +191,13 @@
             </h3>
             <h3 class="contact__content_heading">Fill out the form below</h3>
           </div>
-          <form action="#" method="post">
+          <form action="https://formsubmit.co/oinsur@gmail.com" method="post">
+            <input
+              type="hidden"
+              name="_subject"
+              value="New email from a visitor"
+            />
+            <input type="hidden" name="_captcha" value="false" />
             <div class="form-row">
               <div class="form-row__input-group">
                 <input type="text" id="firstName" name="firstName" required />
@@ -220,7 +226,12 @@
                 <label for="message">Your Message</label>
               </div>
             </div>
-            <button>Send</button>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://omarinsurriaga.com/confirmation.html"
+            />
+            <button type="submit">Send</button>
           </form>
         </section>
       </main>
