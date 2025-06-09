@@ -161,6 +161,10 @@ h1 {
   transition: 0.75s;
 }
 
+#contact {
+  scroll-margin-top: 100px;
+}
+
 .contact-btn {
   color: #e9e6e6;
   background-color: #9747ff;
@@ -509,6 +513,7 @@ h2 {
   border-radius: 20px;
   transition: 0.75s;
   z-index: 1;
+  font-size: 1rem;
 }
 
 .portfolio__card_cta:hover {
@@ -629,6 +634,11 @@ footer p {
 }
 
 /* media-queries */
+@media screen and (max-width: 1024px) {
+  .portfolio__card:nth-of-type(2) .portfolio__card_text {
+    margin-top: 20%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -643,6 +653,9 @@ footer p {
   }
   .mouse-icon {
     display: none;
+  }
+  .services__cards {
+    padding: 5% 2%;
   }
   .portfolio__card {
     flex-direction: column;
@@ -670,9 +683,20 @@ footer p {
   }
   .portfolio__card:nth-of-type(2) .portfolio__card_text {
     border: none;
+    margin-top: 0;
   }
   .contact {
     margin-top: 10%;
+  }
+  #about,
+  #services {
+    scroll-margin-top: 40px;
+  }
+  #portfolio {
+    scroll-margin-top: 20px;
+  }
+  #contact {
+    scroll-margin-top: 60px;
   }
   form {
     width: 82%;
@@ -696,13 +720,58 @@ footer p {
   main {
     margin-top: 30%;
   }
+  h2 {
+    font-size: 2rem;
+  }
+  .about-me {
+    justify-content: center;
+    padding-top: 10%;
+  }
+  .about-me__heading {
+    display: none;
+  }
+  .about-me__content {
+    width: 90%;
+    justify-content: center;
+  }
+  .about-me__content_text p span {
+    font-size: 2rem;
+  }
   #about,
-  #services,
   #portfolio {
     scroll-margin-top: 165px;
   }
+  .portfolio__heading {
+    font-size: 1.2rem;
+  }
+  .portfolio__card_heading {
+    font-size: 1.5rem;
+  }
+  .portfolio__card_title {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .portfolio__card_work {
+    width: 90%;
+  }
+  .portfolio__card_desc {
+    padding: 0;
+    font-size: 1rem;
+  }
+  .portfolio__card:nth-of-type(2) .portfolio__card_desc {
+    padding: 0;
+  }
+  #services {
+    scroll-margin-top: 175px;
+  }
+  .services__cards {
+    padding: 10% 2%;
+  }
   #contact {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 180px;
+  }
+  .contact__content_heading {
+    font-size: 1.5rem;
   }
   .hero__cta,
   .about-me__content_cta {
@@ -713,5 +782,11 @@ footer p {
   .about-me__content_cta a {
     width: 50%;
     font-size: 1rem;
+  }
+  .hero__left {
+    margin-top: 10%;
+  }
+  .hero__img {
+    width: 90%;
   }
 }
