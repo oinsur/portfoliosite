@@ -684,6 +684,7 @@ footer p {
 @media screen and (max-width: 425px) {
   header {
     flex-direction: column;
+    padding: 4% 0;
   }
   nav {
     flex-direction: column;
@@ -694,6 +695,14 @@ footer p {
   }
   main {
     margin-top: 30%;
+  }
+  #about,
+  #services,
+  #portfolio {
+    scroll-margin-top: 165px;
+  }
+  #contact {
+    scroll-margin-top: 150px;
   }
   .hero__cta,
   .about-me__content_cta {
