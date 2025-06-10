@@ -831,6 +831,7 @@ footer p {
   }
   .hero__left {
     margin-top: 10%;
+    padding: 10% 5% 0;
   }
   .hero__img {
     width: 90%;
