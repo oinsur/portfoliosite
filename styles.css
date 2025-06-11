@@ -1,11 +1,8 @@
-/* Google font */
+/* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
 :root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
+  scroll-behavior: auto;
 }
 
 * {
@@ -15,14 +12,13 @@
   scroll-behavior: smooth;
 }
 
+html,
 body {
-  min-width: 375px;
   width: 100%;
+  max-width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
   background-color: #04080d;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: #e9e6e6;
@@ -53,7 +49,6 @@ header {
 }
 
 .logo {
-  /* width: 120px; */
   width: clamp(80px, 8vw, 120px);
 }
 
@@ -112,6 +107,7 @@ section {
 
 .hero__left h2 {
   font-size: clamp(1rem, 6vw, 4rem);
+  text-align: left;
 }
 
 h1 {
@@ -768,6 +764,7 @@ footer p {
   }
   h2 {
     font-size: 2rem;
+    text-align: center;
   }
   .about-me {
     justify-content: center;
@@ -840,6 +837,37 @@ footer p {
     flex-direction: column;
   }
   .form-row__input-group {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main {
+    margin-top: 40%;
+  }
+  .hero__left h1,
+  .hero__left h2,
+  .statement {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .hero__img {
+    width: 80%;
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .portfolio__card,
+  form,
+  .about-me__content,
+  .services__cards {
     width: 100%;
   }
 }
