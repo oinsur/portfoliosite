@@ -162,6 +162,16 @@ h1 {
   color: #9747ff;
   transition: 0.75s;
 }
+.work-btn.download {
+  background-color: #00afaa;
+  color: #041e46;
+  border-color: #00afaa;
+}
+
+.work-btn.download:hover {
+  background-color: #9747ff;
+  border-color: #9747ff;
+}
 
 #contact {
   scroll-margin-top: 100px;
